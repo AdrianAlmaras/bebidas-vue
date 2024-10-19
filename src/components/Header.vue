@@ -34,9 +34,6 @@ const handleSubmit = () => {
                 
                 <!--Navegación-->
                 <nav class="flex gap-4">
-                    <!--
-                    
-                    -->
                      <RouterLink 
                      :to="{name: 'inicio'}"
                      class="text-white uppercase font-bold"
