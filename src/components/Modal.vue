@@ -29,11 +29,16 @@ const bebidasStore = useBebidasStore();
                 <div>
                   
                   <div class="mt-3">
-
+                    <!--Titulo-->
                     <DialogTitle as="h3" class="text-gray-900 text-4xl font-extrabold my-5">
                         {{ bebidasStore.receta.strDrink }}
                     </DialogTitle>
 
+                    <!--Imagen-->
+                    <img 
+                      :src="bebidasStore.receta.strDrinkThumb" 
+                      :alt="'Imagen de ' + bebidasStore.receta.strDrink"
+                    >
                   </div>
 
                 </div>
