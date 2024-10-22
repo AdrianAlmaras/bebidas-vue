@@ -37,7 +37,7 @@ export const useBebidasStore = defineStore('bebidas', () => {
     // cuando se selecciona una bebida
     async function seleccionarBebida(id) {
         const {data: {drinks}} = await APIService.buscarReceta(id);
-        console.log(drinks);
+        console.log(drinks, "seleccionarBebida");
 
         receta.value = drinks[0];
 
