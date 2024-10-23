@@ -33,10 +33,10 @@ const handleSubmit = () => {
                 </div>
                 
                 <!--Navegación-->
-                <nav class="flex gap-4">
+                <nav class="flex gap-4 text-white">
                      <RouterLink 
                      :to="{name: 'inicio'}"
-                     class="text-white uppercase font-bold"
+                     class="uppercase font-bold"
                      active-class="text-orange-500"
                      >
                         Inicio
@@ -44,7 +44,7 @@ const handleSubmit = () => {
 
                       <RouterLink 
                      :to="{name: 'favoritos'}"
-                     class="text-white uppercase font-bold"
+                     class="uppercase font-bold"
                       active-class="text-orange-500"
                      >
                         Favoritos
@@ -107,9 +107,9 @@ const handleSubmit = () => {
 </template>
 
 <style>
-.text-orange-500 {
+/* .text-orange-500 {
     color: rgb(249 115 22 / var(--tw-text-opacity)) !important;
-}
+} */
 
 .header {
     background-image: url('/img/bg.jpg');

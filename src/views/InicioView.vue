@@ -2,7 +2,7 @@
 import {  useBebidasStore  }  from '@/stores/bebidas';
 import Receta from '@/components/Receta.vue';
 
-const bebidas = useBebidasStore()
+const bebidasStore = useBebidasStore()
 </script>
 
 <template>
@@ -13,7 +13,7 @@ const bebidas = useBebidasStore()
 
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-10 my-10 gap-12">
         <Receta
-            v-for="receta in bebidas.recetas"
+            v-for="receta in bebidasStore.recetas"
             :receta="receta"
             :key="receta.idDrink"
         />

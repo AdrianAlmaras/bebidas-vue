@@ -4,11 +4,12 @@ import { Dialog, DialogPanel, DialogTitle,
 
 import {  useModalStore  } from '../stores/modal';
 import { useBebidasStore } from '@/stores/bebidas';
+import { useFavoritosStore } from '@/stores/favoritos';
 
 const modalStore = useModalStore();
 const bebidasStore = useBebidasStore();
+const favoritosStore = useFavoritosStore();
 
-console.log(bebidasStore.receta[0]);
  
 const formatearIngredientes = () =>{
   const ingredienteDiv = document.createElement('DIV');
@@ -103,6 +104,16 @@ const formatearIngredientes = () =>{
                     >
                         Cerrar
                     </button>
+
+                    <button
+                      type="button"
+                       class="w-full rounded bg-orange-600 p-2 font-bold uppercase text-white shadow 
+                        hover:bg-orange-500"
+                      @click="favoritosStore.handleClickFavorito()"
+                    >
+                      Agregar a Favoritos
+                    </button>
+                    
                 </div> 
               
               </DialogPanel>
